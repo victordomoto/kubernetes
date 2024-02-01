@@ -25,4 +25,8 @@ Iremos seguir com um modelo control plane/workers para a criação dos clusters,
 
 * kube-proxy: age como proxy e um loadbalancer. Este componente é responsável por efetuar o roteamento de requisições para os pods corretos, como também cuidar da parte de rede do nó.
 
+### Conceitos 
+Aqui são os principais conceitos e definições necessárias para entender como que o Kubernetes gerencia os containers.
+* pod: o kubernetes não trabalha diretamente com containers, ele utiliza os pods, que nada mais é do que o menor objeto do k8s (pode possuir vários containers), que são abstrações que dividem os recursos como endereço, volumes, ciclos de CPU e memória. 
 
+* deployment: é um dos principais controllers  utilizados.
