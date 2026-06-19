@@ -84,3 +84,25 @@ This is especially useful when multiple controllers exist in the same cluster.
 | TLS                | Enables secure HTTPS communication               |
 
 
+## Ingress nginx install
+Using helm, it's pretty easy to install.
+```
+helm repo add ingress-nginx https://kubernetes.github.io/ingress-nginx
+helm repo update
+
+helm upgrade --install ingress-nginx ingress-nginx/ingress-nginx \
+  --namespace ingress-nginx \
+  --create-namespace \
+  --set controller.service.type=NodePort
+```
+
+## Ingress haproxy install
+```
+helm repo add haproxytech https://haproxytech.github.io/helm-charts
+helm repo update
+
+helm install haproxy-ingress haproxytech/kubernetes-ingress \
+  --namespace haproxy-ingress \
+  --create-namespace \
+  --set controller.service.type=NodePort
+```
