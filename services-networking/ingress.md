@@ -106,3 +106,40 @@ helm install haproxy-ingress haproxytech/kubernetes-ingress \
   --create-namespace \
   --set controller.service.type=NodePort
 ```
+
+
+## Cert-manager install
+```
+helm install cert-manager jetstack/cert-manager \
+  --namespace cert-manager \
+  --create-namespace \
+  --set crds.enabled=true
+```
+
+## Creating ingress TLS
+```
+# clusterissuer.yaml
+apiVersion: cert-manager.io/v1
+kind: ClusterIssuer
+metadata:
+  name: selfsigned
+spec:
+  selfSigned: {}
+```
+
+## Creating cert with commonName
+```
+apiVersion: cert-manager.io/v1
+kind: Certificate
+metadata:
+  name: hello-php-tls
+  namespace: dev-hello-php
+spec:
+  secretName: hello-php-tls
+  commonName: hello-php.homelab.local
+  dnsNames:
+  - hello-php.homelab.local
+  issuerRef:
+    name: selfsigned
+    kind: ClusterIssuer
+```
