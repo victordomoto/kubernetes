@@ -8,13 +8,13 @@ The content is organized according to the main CKA competency domains, making it
 
 This repository contains five directories, organized according to the CKA competency domains.
 
-## storage
+## storage: 10%
 
 * Implement StorageClasses and dynamic volume provisioning
 * Configure volume types, access modes, and reclaim policies
 * Manage PersistentVolumes (PVs) and PersistentVolumeClaims (PVCs)
 
-## troubleshooting
+## troubleshooting: 30%
 
 * Troubleshoot clusters and nodes
 * Troubleshoot cluster components
@@ -22,7 +22,7 @@ This repository contains five directories, organized according to the CKA compet
 * Manage and evaluate container output streams
 * Troubleshoot services and networking
 
-## workloads-scheduling
+## workloads-scheduling: 15%
 
 * Understand application deployments and perform rolling updates and rollbacks
 * Use ConfigMaps and Secrets to configure applications
@@ -30,7 +30,7 @@ This repository contains five directories, organized according to the CKA compet
 * Understand the primitives used to create robust, self-healing application deployments
 * Configure Pod admission and scheduling (resource limits, node affinity, taints, tolerations, etc.)
 
-## cluster-architecture
+## cluster-architecture: 25%
 
 * Manage Role-Based Access Control (RBAC)
 * Prepare the underlying infrastructure for Kubernetes cluster installation
@@ -41,7 +41,7 @@ This repository contains five directories, organized according to the CKA compet
 * Understand extension interfaces (CNI, CSI, CRI, etc.)
 * Understand Custom Resource Definitions (CRDs), and install and configure operators
 
-## services-networking
+## services-networking 20%
 
 * Understand connectivity between Pods
 * Define and enforce NetworkPolicies
