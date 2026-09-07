@@ -49,3 +49,16 @@ This repository contains five directories, organized according to the CKA compet
 * Use the Gateway API to manage ingress traffic
 * Understand how to use Ingress controllers and Ingress resources
 * Understand and use CoreDNS
+
+
+## Alias
+# --- namespace switching (native, no extra binary needed) ---
+alias kns='kubectl config set-context --current --namespace'
+
+# --- context switching (native) ---
+alias kctx='kubectl config use-context'
+alias kgctx='kubectl config get-contexts'
+alias kcurrent='kubectl config current-context'
+
+# --- quick check of current namespace ---
+alias kwhereami='kubectl config view --minify | grep namespace:'
