@@ -29,6 +29,7 @@ This repository contains five directories, organized according to the CKA compet
 * Configure workload autoscaling
 * Understand the primitives used to create robust, self-healing application deployments
 * Configure Pod admission and scheduling (resource limits, node affinity, taints, tolerations, etc.)
+* Study [Pod Security Admission (PSA)](workloads-scheduling/pod-security-admission.md)
 
 ## cluster-architecture: 25%
 
