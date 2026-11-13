@@ -40,7 +40,7 @@ This repository contains five directories, organized according to the CKA compet
 * Implement and configure a highly available control plane
 * Use Helm and Kustomize to install and manage cluster components
 * Understand extension interfaces (CNI, CSI, CRI, etc.)
-* Understand Custom Resource Definitions (CRDs), and install and configure operators
+* Understand [Custom Resource Definitions (CRDs)](cluster-architecture/crds-and-operators.md), and install and configure operators
 
 ## services-networking 20%
 
