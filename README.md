@@ -47,7 +47,7 @@ This repository contains five directories, organized according to the CKA compet
 * Understand connectivity between Pods
 * Define and enforce NetworkPolicies
 * Use ClusterIP, NodePort, and LoadBalancer Service types and endpoints
-* Use the Gateway API to manage ingress traffic
+* Use the [Gateway API](services-networking/gateway-api.md) to manage ingress traffic
 * Understand how to use Ingress controllers and Ingress resources
 * Understand and use CoreDNS
 
